@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Koren Abitbul</title>
+  <meta name="description" content="Koren Abitbul — PhD student in Computer Science at Ben-Gurion University and Machine Learning Engineer at Optimove. Machine unlearning in flow matching models, memorization in deep networks, and computer vision.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230e7c74'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='600' fill='white' text-anchor='middle'%3EKA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <script>
+    // Apply a saved light/dark choice before the page draws, to avoid a flash.
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="wrap nav">
+      <a class="brand" href="#"><span class="brand-avatar" aria-hidden="true">KA<img src="profile.jpg" alt="" onerror="this.remove()"></span>Koren Abitbul</a>
+      <ul>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#activities">Honors</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Switch to light mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section id="about" class="hero">
+      <div class="avatar">KA<img src="profile.jpg" alt="Koren Abitbul" onerror="this.remove()"></div>
+      <div class="hero-text">
+        <h1>Koren Abitbul</h1>
+        <p class="role">PhD Student in Computer Science &middot; Machine Learning<br>
+          <img class="logo" src="logo_bgu.png" alt="" width="22" height="22"><a href="https://www.bgu.ac.il/en/" target="_blank" rel="noopener">Ben-Gurion University of the Negev</a></p>
+        <p>
+          I'm a PhD student in Computer Science at Ben-Gurion University and a
+          <strong>Machine Learning Engineer at Optimove</strong>, where I research and ship
+          recommendation systems that serve real-time predictions to millions of users.
+        </p>
+        <p>
+          In my PhD, I'm currently exploring <strong>machine unlearning in flow matching models</strong>:
+          how to make a trained generative model forget specific data or concepts.
+        </p>
+        <p>
+          During my MSc, under the supervision of
+          <a href="https://sites.google.com/view/yehuda-dar" target="_blank" rel="noopener">Dr. Yehuda Dar</a>,
+          I studied <strong>what deep networks remember about their training data</strong>. I framed
+          memorization in overparameterized autoencoders as an <strong>inverse problem</strong>,
+          recovering training images that earlier methods could not. The work was accepted as an
+          <strong>oral presentation at ECML PKDD 2024</strong>.
+        </p>
+
+        <ul class="links">
+          <li><a href="mailto:abitbulkoren@gmail.com">Email</a></li>
+          <li><a href="https://github.com/koren12122" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://arxiv.org/abs/2310.02897" target="_blank" rel="noopener">arXiv</a></li>
+          <!-- Add your links here, e.g.:
+          <li><a href="https://www.linkedin.com/in/YOUR-HANDLE/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=YOUR-ID" target="_blank" rel="noopener">Google Scholar</a></li>
+          <li><a href="cv.pdf" target="_blank" rel="noopener">CV</a></li>
+          -->
+        </ul>
+        <p class="interests">
+          <span>Machine Unlearning</span><span>Flow Matching</span><span>Memorization</span><span>Computer Vision</span>
+          <span>Recommender Systems</span>
+        </p>
+      </div>
+    </section>
+
+
+    <section id="publications">
+      <h2>Publications</h2>
+
+      <article class="feature">
+        <header class="feature-head">
+          <span class="pub-venue">ECML PKDD 2024</span><span class="badge">Oral Presentation</span><span class="context">MSc Research</span>
+          <h3>How Much Training Data is Memorized in Overparameterized Autoencoders? An Inverse Problem Perspective on Memorization Evaluation</h3>
+          <p class="authors"><b>Koren Abitbul</b>, Yehuda Dar</p>
+        </header>
+        <div class="memo" data-memo>
+          <div class="memo-row">
+            <figure>
+              <div class="memo-tile target" style="background-image: url(memo_target.jpg)" role="img" aria-label="Original training image: a kayaker on a river"></div>
+              <figcaption><strong>Training image</strong><br>(the target)</figcaption>
+            </figure>
+            <figure>
+              <div class="memo-tile prev" style="background-image: url(memo_prev.jpg)" role="img" aria-label="Previous method: iterating the autoencoder converges to a different training image, a flag"><span class="memo-verdict bad">wrong image</span></div>
+              <figcaption><strong>Previous method</strong><br>iterate the autoencoder</figcaption>
+            </figure>
+            <figure>
+              <div class="memo-tile ours" style="background-image: url(memo_ours.jpg)" role="img" aria-label="Our method: the same degraded input is recovered to the original kayaker image"><span class="memo-verdict ok">recovered</span></div>
+              <figcaption><strong>Ours</strong><br>inverse-problem recovery</figcaption>
+            </figure>
+          </div>
+          <div class="memo-progress">
+            <div class="memo-controls">
+              <button class="memo-btn" type="button" data-step="-1" aria-label="Previous iteration"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+              <button class="memo-btn memo-toggle" type="button" aria-label="Pause"><svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12M15 6v12"/></svg><svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg></button>
+              <button class="memo-btn" type="button" data-step="1" aria-label="Next iteration"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+            </div>
+            <span class="memo-label" aria-live="polite">Degraded input</span>
+            <div class="memo-steps" role="slider" tabindex="0" aria-label="Recovery iteration" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <p class="memo-note">Both methods start from the same training image with a block of missing pixels. Step through the iterations with the arrows or drag along the bar. From Fig.&nbsp;1 of the paper.</p>
+        </div>
+
+        <div>
+          <p class="summary">
+            Autoencoders often memorize their training images, and memorization is usually measured by asking the
+            trained model to fill in missing regions of a training image. We cast that recovery as an
+            <strong>inverse problem</strong>: the trained autoencoder implicitly defines a regularizer for its own
+            training set, and an iterative method alternates between applying the autoencoder and estimating the
+            unknown degradation.
+          </p>
+          <ul class="bullets">
+            <li>Blind inpainting: recovers training images with many missing pixels in an unknown pattern.</li>
+            <li>Evaluated on fully connected and U-Net autoencoders, across nonlinearities and training-loss levels.</li>
+            <li>Significantly outperforms previous recovery methods, including in settings previously considered impractical for memorization evaluation.</li>
+          </ul>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2310.02897" target="_blank" rel="noopener">arXiv</a>
+            <a href="https://arxiv.org/pdf/2310.02897" target="_blank" rel="noopener">PDF</a>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+
+      <article class="project">
+        <div class="project-top">
+          <div class="project-hero">
+            <div class="demo-frame">
+              <img class="demo" src="card_counter.webp" alt="Live demo: playing cards dealt on a table are outlined with rotated boxes, labeled with their rank, and added to the running count" width="420" height="236">
+              <p class="hero-caption">&#9824;&#65039; <strong>Live camera</strong> &middot; detect &rarr; track &rarr; classify &rarr; count</p>
+            </div>
+            <p class="hilo-label">Hi-Lo card values</p>
+            <div class="hilo" aria-label="Hi-Lo card values">
+              <div class="plus"><b>+1</b><span>2 &ndash; 6</span></div>
+              <div><b>0</b><span>7 &ndash; 9</span></div>
+              <div class="minus"><b>&minus;1</b><span>10, J, Q, K, A</span></div>
+            </div>
+          </div>
+          <div class="project-text">
+            <h3>Blackjack Card Counter: Real-Time Card Detection and Hi-Lo Counting</h3>
+            <p class="project-meta"><strong>Personal project</strong> &middot; 2026 &middot; Python, YOLO, OpenCV</p>
+            <p>
+              A real-time computer vision pipeline that watches a blackjack table, finds every card at any angle,
+              reads its rank, and keeps the Hi-Lo running and true count as the cards are dealt.
+            </p>
+            <ul class="pipeline" aria-label="Pipeline stages">
+              <li>YOLO OBB detector</li><li class="arrow" aria-hidden="true">&rarr;</li>
+              <li>IoU tracker</li><li class="arrow" aria-hidden="true">&rarr;</li>
+              <li>Rank classifier</li><li class="arrow" aria-hidden="true">&rarr;</li>
+              <li>Hi-Lo count</li>
+            </ul>
+            <ul class="bullets">
+              <li><strong>Oriented bounding boxes</strong> handle cards at any rotation; each crop is perspective-warped before classification.</li>
+              <li><strong>Multi-frame weighted voting</strong> finalizes a card's rank only after consensus, so one bad frame can't change the count.</li>
+              <li>Classification runs <strong>batched and asynchronous</strong> on a background thread, keeping the main loop real-time on Apple Silicon (MPS).</li>
+              <li>Pluggable trackers (simple IoU, ByteTrack, BoT-SORT, SORT); the IoU tracker avoids the box inflation of Kalman filters.</li>
+            </ul>
+            <p class="pub-links">
+              <a href="https://github.com/koren12122/card_counter_project" target="_blank" rel="noopener">Code</a>
+            </p>
+          </div>
+        </div>
+
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <ol class="xp-timeline">
+        <li class="xp">
+          <span class="xp-marker"><img src="logo_optimove.png" alt="" width="40" height="40"></span>
+          <div class="xp-body">
+            <time>2024 &ndash; present</time>
+            <h3>Machine Learning Engineer</h3>
+            <p class="xp-org">Optimove</p>
+            <ul>
+              <li>Researched, built, and deployed end-to-end recommendation systems for personalized content across industries, serving real-time predictions to up to millions of users on AWS (Athena, S3) and Snowflake.</li>
+              <li>Built a proof of concept for user embeddings with a contextual multi-armed bandit, for adaptive real-time personalization during live sports events.</li>
+              <li>Improved churn and future-value forecasting models with statistical feature engineering, including MoE encoders and correlation filtering.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="xp">
+          <span class="xp-marker"><img src="logo_redhat.png" alt="" width="40" height="40"></span>
+          <div class="xp-body">
+            <time>2022 &ndash; 2023</time>
+            <h3>Machine Learning Intern</h3>
+            <p class="xp-org">Red Hat</p>
+            <ul>
+              <li>Contributed a CNN model for time-series forecasting to an open-source project that predicts Kubernetes (OpenShift) resource consumption from Prometheus CPU and memory metrics.</li>
+            </ul>
+            <p class="pub-links">
+              <a href="https://github.com/AdiY10/AppLearner" target="_blank" rel="noopener">AppLearner</a>
+              <a href="https://github.com/koren12122/CNN-for-time-Series-Forecasting" target="_blank" rel="noopener">CNN model</a>
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="activities">
+      <h2>Honors &amp; Activities</h2>
+      <ul class="bullets">
+        <li><div class="li-media"><div class="li-text"><p><strong>Third place, HackIDC 2021</strong>, then Israel's largest student hackathon: 300 students, including MSc and PhD students, from Israel's top universities (Technion, Tel Aviv, Hebrew, and Ben-Gurion).</p><p>As second-year undergraduates, our team, <em>Survey Vision</em>, built an app powered by computer vision, together with <a href="https://royamoyal.github.io/" target="_blank" rel="noopener">Roy Amoyal</a>.</p><p>In the finals, the team pitched to 200+ people and a panel of judges, including:</p><ul class="judges"><li><strong>Dov Moran</strong>, co-inventor of the USB flash drive</li><li><strong>Dr. Dorit Dor</strong>, former CTO of Check Point</li><li><strong>Moran Nir</strong>, AWS startups lead</li></ul></div><figure class="entry-figure"><a href="hackidc_win.jpg" target="_blank" rel="noopener"><img src="hackidc_win.jpg" alt="Team Survey Vision with the HackIDC 2021 third-place check" loading="lazy"></a><figcaption>Third-place prize</figcaption></figure></div></li>
+      </ul>
+    </section>
+
+    <section id="community">
+      <h2>Community</h2>
+      <ul class="bullets">
+        <li><strong>Reviewer</strong> for ECML PKDD 2024.</li>
+        <li><strong>Open-source contribution</strong> during my Red Hat internship: a CNN time-series forecasting model for
+          <a href="https://github.com/AdiY10/AppLearner" target="_blank" rel="noopener">AppLearner</a>, an open-source project
+          that predicts Kubernetes (OpenShift) resource consumption from Prometheus CPU and memory metrics.
+          <a href="https://github.com/koren12122/CNN-for-time-Series-Forecasting" target="_blank" rel="noopener">[Code]</a></li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li><time>2026 &ndash; now</time> <span><img class="logo" src="logo_bgu.png" alt="" width="22" height="22"><strong>PhD, Computer Science</strong>, Ben-Gurion University.</span></li>
+        <li><time>2023 &ndash; 2024</time> <span><img class="logo" src="logo_bgu.png" alt="" width="22" height="22"><strong>MSc, Computer Science</strong>, Ben-Gurion University. Specialization in Artificial Intelligence. GPA 95.</span></li>
+        <li><time>2019 &ndash; 2023</time> <span><img class="logo" src="logo_bgu.png" alt="" width="22" height="22"><strong>BSc, Computer Science</strong>, Ben-Gurion University. GPA 91.</span></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="wrap footer">
+    <p>&copy; <span id="year">2026</span> Koren Abitbul</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Light/dark toggle; the choice is remembered for next visits.
+    const themeBtn = document.querySelector('.theme-toggle');
+    const setThemeLabel = () => themeBtn.setAttribute('aria-label', document.documentElement.dataset.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    themeBtn.addEventListener('click', () => {
+      const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      setThemeLabel();
+    });
+    setThemeLabel();
+
+
+    // Show the small photo in the top bar once the big profile photo has scrolled out of view.
+    const header = document.querySelector('.site-header');
+    const bigAvatar = document.querySelector('.hero .avatar');
+    const updateHeader = () => header.classList.toggle('scrolled', bigAvatar.getBoundingClientRect().bottom < header.offsetHeight);
+    addEventListener('scroll', updateHeader, { passive: true });
+    updateHeader();
+
+    // Paper figure: step both methods through their 7 recovery iterations in lockstep,
+    // hold on the final result, then start over. Each tile is a 7-frame sprite strip.
+    // Arrows, arrow keys, or clicking/dragging the bar take over and pause the autoplay.
+    document.querySelectorAll('[data-memo]').forEach(memo => {
+      const tiles = memo.querySelectorAll('.memo-tile.prev, .memo-tile.ours');
+      const bar = memo.querySelector('.memo-steps');
+      const steps = bar.querySelectorAll('i');
+      const label = memo.querySelector('.memo-label');
+      const toggle = memo.querySelector('.memo-toggle');
+      const FRAMES = 7, STEP_MS = 650, HOLD_MS = 2600;
+      let i = 0, timer = null;
+      const show = () => {
+        tiles.forEach(t => { t.style.backgroundPosition = `${(i / (FRAMES - 1)) * 100}% 0`; });
+        steps.forEach((s, k) => s.classList.toggle('on', k <= i));
+        label.textContent = i === 0 ? 'Degraded input' : i === FRAMES - 1 ? 'Final result' : `Iteration ${i}`;
+        bar.setAttribute('aria-valuenow', i);
+        bar.setAttribute('aria-valuetext', label.textContent);
+        memo.classList.toggle('done', i === FRAMES - 1);
+      };
+      const tick = () => {
+        i = (i + 1) % FRAMES;
+        show();
+        timer = setTimeout(tick, i === FRAMES - 1 ? HOLD_MS : i === 0 ? STEP_MS * 1.5 : STEP_MS);
+      };
+      const setPlaying = on => {
+        memo.classList.toggle('paused', !on);
+        toggle.setAttribute('aria-label', on ? 'Pause' : 'Play');
+      };
+      const play = () => {
+        clearTimeout(timer);
+        if (i === FRAMES - 1) i = -1; // replay from the start when resumed on the last frame
+        timer = setTimeout(tick, STEP_MS);
+        setPlaying(true);
+      };
+      const pause = () => { clearTimeout(timer); timer = null; setPlaying(false); };
+      const goTo = k => { pause(); i = Math.max(0, Math.min(FRAMES - 1, k)); show(); };
+
+      toggle.addEventListener('click', () => (timer ? pause() : play()));
+      memo.querySelectorAll('[data-step]').forEach(b => b.addEventListener('click', () => goTo(i + Number(b.dataset.step))));
+
+      // Click or drag along the bar to scrub.
+      const frameAt = x => { const r = bar.getBoundingClientRect(); return Math.floor(((x - r.left) / r.width) * FRAMES); };
+      bar.addEventListener('pointerdown', e => { bar.setPointerCapture(e.pointerId); goTo(frameAt(e.clientX)); });
+      bar.addEventListener('pointermove', e => { if (bar.hasPointerCapture(e.pointerId)) goTo(frameAt(e.clientX)); });
+
+      bar.addEventListener('keydown', e => {
+        const k = { ArrowLeft: i - 1, ArrowDown: i - 1, ArrowRight: i + 1, ArrowUp: i + 1, Home: 0, End: FRAMES - 1 }[e.key];
+        if (k !== undefined) { e.preventDefault(); goTo(k); }
+        else if (e.key === ' ') { e.preventDefault(); timer ? pause() : play(); }
+      });
+
+      show();
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) { i = FRAMES - 1; show(); pause(); }
+      else play();
+    });
+  </script>
+</body>
+</html>
