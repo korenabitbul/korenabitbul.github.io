@@ -744,3 +744,44 @@ h2 {
   .memo-progress { flex-wrap: wrap; row-gap: 0.1rem; }
   .memo-steps { flex-basis: 100%; order: 3; }
 }
+
+/* ---- Theme: technical. Deep navy, violet accent, Space Grotesk headings, monospace labels. ---- */
+
+:root {
+  --bg: #f7f7fb; --surface: #ffffff; --text: #151826; --muted: #5d6275; --border: #dfe1ea;
+  --accent: #6d4ce6; --accent-soft: #ece8fd;
+  --serif: "Space Grotesk", sans-serif; --sans: "IBM Plex Sans", -apple-system, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+:root[data-theme="dark"] {
+  --bg: #0b0e1a; --surface: #121629; --text: #e6e8f2; --muted: #8d93ab; --border: #232842;
+  --accent: #a48bff; --accent-soft: #1e1b3d;
+}
+h1, h2, h3 { font-weight: 600; letter-spacing: -0.015em; }
+h1 { font-size: 2.6rem; }
+main section:not(.hero) > h2::before { content: "// "; font-family: var(--mono); color: var(--accent); font-weight: 400; }
+.role, .timeline time, .xp-body time, .project-meta, .pub-venue, .badge, .interests span,
+.memo-progress, .hilo-label, .links a, .nav ul a, .context { font-family: var(--mono); }
+.nav ul a, .links a { font-size: 0.8rem; }
+.role { font-size: 0.85rem; }
+.avatar { border-radius: 16px; outline: 1px solid var(--accent); outline-offset: 5px; }
+.brand-avatar { border-radius: 6px; }
+.interests span { border-radius: 4px; background: transparent; border: 1px dashed var(--accent); font-size: 0.72rem; }
+.links a { border-radius: 4px; }
+.pub-venue { border-radius: 2px; }
+.feature, .project, #activities .bullets > li {
+  border: 1px solid var(--border); border-radius: 12px; background: var(--surface); padding: 1.25rem;
+}
+#activities .bullets { padding-left: 0; list-style: none; }
+.memo { background: var(--bg); }
+.hilo div, .pipeline li { background: var(--bg); }
+.project + .project { border-top: 1px solid var(--border); }
+.timeline li { grid-template-columns: 8rem 1fr; }
+.timeline time { white-space: nowrap; font-size: 0.88rem; }
+.hilo b { font-family: var(--mono); font-weight: 500; }
+@media (max-width: 640px) {
+  .nav ul { gap: 0.45rem; }
+  .nav ul a { font-size: 0.68rem; }
+  .feature, .project, #activities .bullets > li { padding: 0.9rem; }
+  .timeline li { grid-template-columns: 1fr; }
+}
