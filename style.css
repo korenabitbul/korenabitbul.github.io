@@ -745,43 +745,33 @@ h2 {
   .memo-steps { flex-basis: 100%; order: 3; }
 }
 
-/* ---- Theme: technical. Deep navy, violet accent, Space Grotesk headings, monospace labels. ---- */
+/* ---- Theme: warm editorial. Paper tones, terracotta accent, Fraunces headings, numbered sections. ---- */
 
 :root {
-  --bg: #f7f7fb; --surface: #ffffff; --text: #151826; --muted: #5d6275; --border: #dfe1ea;
-  --accent: #6d4ce6; --accent-soft: #ece8fd;
-  --serif: "Space Grotesk", sans-serif; --sans: "IBM Plex Sans", -apple-system, sans-serif;
-  --mono: "JetBrains Mono", ui-monospace, monospace;
+  --bg: #f6f1e7; --surface: #fffaf1; --text: #2a211b; --muted: #75685c; --border: #e4d9c8;
+  --accent: #b5471b; --accent-soft: #f6e0d2;
+  --serif: "Fraunces", Georgia, serif; --sans: "Work Sans", -apple-system, sans-serif;
 }
 :root[data-theme="dark"] {
-  --bg: #0b0e1a; --surface: #121629; --text: #e6e8f2; --muted: #8d93ab; --border: #232842;
-  --accent: #a48bff; --accent-soft: #1e1b3d;
+  --bg: #1b1714; --surface: #241f1b; --text: #efe6da; --muted: #a8998a; --border: #3a322b;
+  --accent: #f08a5d; --accent-soft: #3a2519;
 }
-h1, h2, h3 { font-weight: 600; letter-spacing: -0.015em; }
-h1 { font-size: 2.6rem; }
-main section:not(.hero) > h2::before { content: "// "; font-family: var(--mono); color: var(--accent); font-weight: 400; }
-.role, .timeline time, .xp-body time, .project-meta, .pub-venue, .badge, .interests span,
-.memo-progress, .hilo-label, .links a, .nav ul a, .context { font-family: var(--mono); }
-.nav ul a, .links a { font-size: 0.8rem; }
-.role { font-size: 0.85rem; }
-.avatar { border-radius: 16px; outline: 1px solid var(--accent); outline-offset: 5px; }
-.brand-avatar { border-radius: 6px; }
-.interests span { border-radius: 4px; background: transparent; border: 1px dashed var(--accent); font-size: 0.72rem; }
-.links a { border-radius: 4px; }
-.pub-venue { border-radius: 2px; }
-.feature, .project, #activities .bullets > li {
-  border: 1px solid var(--border); border-radius: 12px; background: var(--surface); padding: 1.25rem;
+body { counter-reset: sec; }
+.avatar { border-radius: 22px; box-shadow: 8px 8px 0 var(--accent-soft); }
+.brand-avatar { border-radius: 7px; }
+h1 { font-size: 2.7rem; letter-spacing: -0.01em; }
+main section:not(.hero) > h2 { counter-increment: sec; border-bottom: 0; padding-bottom: 0; display: flex; align-items: baseline; gap: 0.75rem; }
+main section:not(.hero) > h2::before {
+  content: "0" counter(sec); font: 600 0.8rem var(--sans); letter-spacing: 0.12em; color: var(--accent);
 }
-#activities .bullets { padding-left: 0; list-style: none; }
-.memo { background: var(--bg); }
-.hilo div, .pipeline li { background: var(--bg); }
-.project + .project { border-top: 1px solid var(--border); }
-.timeline li { grid-template-columns: 8rem 1fr; }
-.timeline time { white-space: nowrap; font-size: 0.88rem; }
-.hilo b { font-family: var(--mono); font-weight: 500; }
+main section:not(.hero) > h2::after { content: ""; flex: 1; height: 1px; background: var(--border); transform: translateY(-0.3rem); }
+.links a { border-radius: 6px; }
+.interests span { border-radius: 999px; background: transparent; border: 1px solid var(--accent); }
+.pub-venue { border-radius: 999px; }
+.memo { border-radius: 14px; }
+.memo-tile { border-radius: 10px; }
+.xp-marker { border-radius: 50%; }
+.nav ul a { font-size: 0.9rem; letter-spacing: 0.02em; }
 @media (max-width: 640px) {
-  .nav ul { gap: 0.45rem; }
-  .nav ul a { font-size: 0.68rem; }
-  .feature, .project, #activities .bullets > li { padding: 0.9rem; }
-  .timeline li { grid-template-columns: 1fr; }
+  .nav ul a { font-size: 0.8rem; letter-spacing: 0; }
 }
