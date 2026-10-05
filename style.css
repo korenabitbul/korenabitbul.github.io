@@ -750,7 +750,7 @@ h2 {
 :root {
   --bg: #f6f1e7; --surface: #fffaf1; --text: #2a211b; --muted: #75685c; --border: #e4d9c8;
   --accent: #b5471b; --accent-soft: #f6e0d2;
-  --serif: "Fraunces", Georgia, serif; --sans: "Plus Jakarta Sans", -apple-system, sans-serif;
+  --serif: "Fraunces", Georgia, serif; --sans: "Source Sans 3", -apple-system, sans-serif;
 }
 :root[data-theme="dark"] {
   --bg: #1b1714; --surface: #241f1b; --text: #efe6da; --muted: #a8998a; --border: #3a322b;
@@ -797,3 +797,9 @@ main section:not(.hero) > h2::after { content: ""; flex: 1; height: 1px; backgro
 .links a.link-primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
 .links a.link-primary svg { color: var(--bg); }
 .links a.link-primary:hover { color: var(--bg); filter: brightness(1.08); }
+
+/* Source Sans 3 runs small: bump the body size and give lines a little more room. */
+body { font-size: 17px; line-height: 1.7; }
+.memo-note, .memo figcaption, .memo-progress, .pipeline, .hilo span, .entry-figure figcaption { font-size: 0.85rem; }
+.interests span, .xp-body time { font-size: 0.86rem; }
+@media (max-width: 640px) { .memo figcaption { font-size: 0.78rem; } }
