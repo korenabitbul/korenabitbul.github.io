@@ -775,3 +775,25 @@ main section:not(.hero) > h2::after { content: ""; flex: 1; height: 1px; backgro
 @media (max-width: 640px) {
   .nav ul a { font-size: 0.8rem; letter-spacing: 0; }
 }
+
+/* Contact links: icon buttons. Email is the filled primary action. */
+.links { gap: 0.6rem; }
+.links a {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border); border-radius: 10px;
+  background: var(--surface); color: var(--text);
+  font-size: 0.9rem; font-weight: 500;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+  transition: transform 0.15s, border-color 0.15s, color 0.15s, box-shadow 0.15s;
+}
+.links a svg { width: 1.05rem; height: 1.05rem; fill: currentColor; color: var(--accent); transition: color 0.15s; }
+.links a svg.ico-stroke { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.links a:hover {
+  transform: translateY(-2px); text-decoration: none;
+  border-color: var(--accent); color: var(--accent);
+  box-shadow: 0 6px 16px -8px var(--accent);
+}
+.links a.link-primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.links a.link-primary svg { color: var(--bg); }
+.links a.link-primary:hover { color: var(--bg); filter: brightness(1.08); }
